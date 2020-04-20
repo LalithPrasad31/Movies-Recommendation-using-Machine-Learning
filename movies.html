@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 <head>
   <title>Movie Suggestion</title>
   <meta charset="utf-8">
@@ -10,6 +11,7 @@
   <style>
 
 .select-css {
+	
 	float:right;
 	display: block;
 	font-size: 16px;
@@ -38,14 +40,18 @@
 	/* icon size, then gradient */
 	background-size: .65em auto, 100%;
 }
+	  
+	  
 /* Hide arrow icon in IE browsers */
 .select-css::-ms-expand {
 	display: none;
 }
+	  
 /* Hover style */
 .select-css:hover {
 	border-color: #888;
 }
+	  
 /* Focus style */
 .select-css:focus {
 	border-color: #aaa;
@@ -56,11 +62,13 @@
 	outline: none;
 }
 
+	  
 /* Set options to normal weight */
 .select-css option {
 	font-weight:normal;
 }
 
+	  
 /* Support for rtl text, explicit support for Arabic and Hebrew */
 *[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
 	background-position: left .7em top 50%, 0 0;
@@ -74,6 +82,7 @@
 	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
 }
 
+	  
 .select-css:disabled:hover, .select-css[aria-disabled=true] {
 	border-color: #aaa;
 }
@@ -140,9 +149,13 @@
     color: #c59b08;
 }
 
+	  
 </style>
+	
 </head>
+	
 <body>
+	
 <form action="http://localhost:5000/movies" method="POST">
 <div class="jumbotron text-center">
   <h1>Movie Suggestion</h1>
@@ -159,12 +172,15 @@
 	<option value = "hindi">Hindi</option>
 	<option value="spanish">Spanish</option>
 </select>
+	    
     </div>
+	  
   </div>
   
   <div class="row">
+	  
         <div class="col-sm-6" style="padding:15px;left:150px;">
-      <select class="select-css" name ="genre">
+    	  <select class="select-css" name ="genre">
 	<option>Select a Genre</option>
 	<option value="0">Action</option>
 	<option value ="1">Adventure</option>
@@ -177,13 +193,16 @@
 	<option value = "8">Family</option>
 	<option value = "9">History</option>
 </select>
+		
 </div>
+	  
 </div>
 
 
 <div class="row">
 
   <div class="col-sm-6" style="padding:15px;left:150px;">
+	  
     <select class="select-css" name ="year">
 	<option>Select a Year</option>
 	<option value="2015">After 2015</option>
@@ -193,16 +212,21 @@
 </select>
    
   </div>
+	
   </div>
   <div class="row">
-   <div class="col-sm-6" style="padding:15px;left:150px;">
+	  
+   <div class="col-sm-6" style="padding:15px;left:150px;">	   
+	   
     <select class="select-css" name ="pop">
+	    
 	<option>Select the Popularity</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
 	<option value="4">4</option>
 	<option value="5">5</option>
+	    
 </select>
    
   </div>
@@ -210,23 +234,33 @@
   </div>	
   <br>
   <div class="row">
+	  
   <div class="col-sm-6" style="left:800px;">
+	  
   <p><b><h4>Select The Required Runtime:</h4></b></p>
 
   </div>
+	  
   </div>
   
   <div class="row">
+	  
+	  
   <div class="col-sm-6" style="left:820px;">
 	<label class="radio"><input type="radio" name="run" value="120" checked>More Than 100 mins</label>
 	<label class="radio"><input type="radio" name="run" value="90">Less Than 100 mins</label>
   
   </div>
+	  
   </div>
   <br>
+	
    <div class="row">
+	   
    <div class="col-sm-6" style="left:800px;">
+	   
    <p><b><h4>Select The Required Rating:</h4></b></p>
+	   
    </div>
 	</div>
   <div class="row">
@@ -247,11 +281,9 @@
   </div>
    
   </div>
+   
   
-  
-  
-  
-  </div>
+ </div>
   
   
   <br>
@@ -259,10 +291,15 @@
   <div class="col-sm-6" style= "padding:50px ;left:775px;">
    <button class="button button1" type="submit">Submit</button>
    
+ 
+     </div>
+ 
   </div>
- </div>
+
 </div>
 
 </form>
+	
 </body>
+	
 </html>

@@ -79,7 +79,9 @@ def movies():
 	
 	print(y_pred1)
 	print(y_pred)
+	
 	'''
+	
 	with open('E:\python project\Dataset\\edit1.csv', 'r') as inp, open('E:\python project\Dataset\\edit2.csv', 'w') as out:
 		writer = csv.writer(out)
 		for row in csv.reader(inp):
@@ -89,8 +91,10 @@ def movies():
 	fil = 'E:\python project\Dataset\\edit2.csv'
 	names = ['1','2','3','4','5','6']
 	dataset = pd.read_csv(fil, names=names)
+	
 	x = dataset.iloc[:, :-1].values
 	y = dataset.iloc[:, 5].values
+	
 	scaler = StandardScaler()
 	scaler.fit(x)
 	
@@ -111,11 +115,14 @@ def movies():
 			if row[5] != str(y_pred2[0]):
 				writer.writerow(row)
     
+    
 	fil = 'E:\python project\Dataset\\edit3.csv'
 	names = ['1','2','3','4','5','6']
 	dataset = pd.read_csv(fil, names=names)
+	
 	x = dataset.iloc[:, :-1].values
 	y = dataset.iloc[:, 5].values
+	
 	scaler = StandardScaler()
 	scaler.fit(x)
 	
@@ -129,6 +136,8 @@ def movies():
 	
 	y_pred3 = classifier.predict(x_t)
 	'''
+	
+	
 	sel = "<font color=""red""><h1><u>TOP SELECTIONS FOR YOU</u></h1></font><h3>"
 
 	bre="<br><br>"
